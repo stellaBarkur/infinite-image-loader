@@ -1,0 +1,14 @@
+<header>
+  <mat-button-toggle-group class="btn-holder">
+    <mat-button-toggle class="btn" mat-button color="primary" [routerLink]="['/photos']">
+      Photos
+    </mat-button-toggle>
+
+    <mat-button-toggle class="btn" mat-button color="primary" [routerLink]="['/favourites']"> 
+      Favourites
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+   
+</header>
+
+<router-outlet></router-outlet>

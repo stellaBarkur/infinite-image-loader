@@ -1,0 +1,7 @@
+<img *ngIf="photoService.favourites[index]" class="center padding"  layout-align="center center" [src]="photoService.favourites[index]" width="70%" height="70%">
+
+<div *ngIf="photoService.favourites[index]" class="center">
+    <button class="btn" mat-button color="primary" (click)="removeFromFav()">Remove from favourites</button>
+</div>
+
+<div class="center padding" *ngIf="!photoService.favourites[index]">   No photos in favourites!</div>

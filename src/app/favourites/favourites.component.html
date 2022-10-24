@@ -1,0 +1,9 @@
+
+<div class="img-container">
+    <div class="image" *ngFor="let photo of photoService.favourites; let i=index">
+        <app-card [picture]="photo" [favourite]="true" [index]="i"> </app-card>       
+    </div>
+</div>
+
+
+
